@@ -27,6 +27,7 @@ int main()
         //Quay lại kiểm tra điều kiện ở while
     }
     
+    //Sau khi chạy xong while ta có num3[0]=0, num3[1]=1, num3[2]=1 và k=3 nên chỉ chạy đảo ngược thì ra đáp án 98+12.
     for (int i = k-1; i >= 0; i--)
     {
         printf("%c", num3[i]);
