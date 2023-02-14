@@ -18,7 +18,7 @@ int check(long long a)
 int main()
 {
     long long a, b, dem = 0;
-    scanf("%d %d", &a, &b);
+    scanf("%lld %lld", &a, &b);
     for (long long i = b; i >= a; i--)
     {
         if (check(i) <= 3)
@@ -31,3 +31,4 @@ int main()
     if (dem == 0) printf("0");
     return 0;
 }
+//10/10
