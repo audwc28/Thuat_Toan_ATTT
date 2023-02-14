@@ -3,9 +3,14 @@
 int check(long long a)
 {
     int dem = 0;
-    for (long long i = 2; i <= a/2; i++)
+    for (int i = 1; i*i <= a; i++)
     {
-        if (a % i == 0) dem++;
+        if (a % i == 0)
+        {
+            dem++;
+            int j = a/i;
+            if (i != j) dem++;
+        }
     }
     if (dem % 2 == 1)
     {
@@ -14,6 +19,7 @@ int check(long long a)
     {
         return 0;
     }
+    
 }
 
 int main()
@@ -40,4 +46,4 @@ int main()
     
     return 0;
 }
-// 1/10
+// 10/10
